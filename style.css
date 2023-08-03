@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 2%;
+}
+
+.logo{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-links{
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    padding: 2%;
+    padding-bottom: 0%;
+}
+
+.heading{
+    font-size: 3rem;
+}
+.description{
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.bottom-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons{
+    display: flex;
+    align-items: start;
+    padding-top:20px;
+    gap: 30px;
+}
+
+.banner{
+    width: 50%;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.login, .signup{
+    border: 1px solid black;
+    font-weight: 800;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.login:hover, .signup:hover{
+    background-color: white;
+    color: black;
+}
+
+.login{
+    background-color: black;
+    color: white;
+}

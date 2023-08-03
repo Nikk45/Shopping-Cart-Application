@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="icon" href="../Assets/logo2-removebg-preview.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="./shop.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">    
+            <div class="logo">MeShop.</div>
+            <div class="nav-links">
+                <a href="../shop/shop.html" id="home">Home</a>
+                <!-- <a href="#" id="login">Login</a>
+                <a href="#" id="signup">Signup</a> -->
+                <a href="../cart/cart.html" id="mycart">My Cart</a>
+                <a href="../profile/profile.html" id="profile">Profile</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <aside class="filter-section">
+                <div class="filter">
+                    <h5>Colors</h5>
+                    <div class="color-filter">
+                        <div><input type="checkbox" id="red" value="red"> <label for="red">Red</label></div>
+                        <div><input type="checkbox" id="blue" value="blue"> <label for="blue">Blue</label></div>
+                        <div><input type="checkbox" id="green" value="green"> <label for="green">Green</label></div>
+                        <div><input type="checkbox" id="black" value="black"> <label for="black">Black</label></div>
+                        <div><input type="checkbox" id="white" value="white"> <label for="white">White</label></div>
+                    </div>
+                </div>
+                <div class="filter">
+                    <h5>Sizes</h5>
+                    <div class="size-filter">
+                        <div><input type="checkbox" id="s" value="s"> <label for="s">S</label></div>
+                        <div><input type="checkbox" id="m" value="m"> <label for="m">M</label></div>
+                        <div><input type="checkbox" id="l" value="l"> <label for="l">L</label></div>
+                        <div><input type="checkbox" id="xl" value="xl"> <label for="xl">XL</label></div>
+                    </div>
+                </div>
+
+                <div class="filter">
+                    <h5>Rating</h5>
+                    <div>
+                        <input type="range" id="rating" min="0" max="5">
+                        <div class="zero-5"><p>0</p> <p>5</p></div>
+                    </div>
+                </div>
+
+                <div class="filter">
+                    <h5>Price Range</h5>
+                    <div class="price-filter">
+                        <div><input type="checkbox" id="0-25" value="0-25"> <label>$0 to 25$</label></div>
+                        <div><input type="checkbox" id="25-50" value="25-50"> <label>$25 to $50</label></div>
+                        <div><input type="checkbox" id="50-100" value="50-100"> <label>$50 to $100</label></div>
+                        <div><input type="checkbox" id="100-200" value="100-200"> <label>$100 onwards</label></div>
+                    </div>
+                </div>
+
+                <div class="apply-filter">Apply Filter</div>
+            </aside>
+
+            <div class="shop-section">
+                <div class="search-bar">
+                    <img src="../Assets/search.png" alt="search">
+                    <input type="text" id="search" placeholder="Search">
+                </div>
+
+                <div class="search-by-names">
+                    <div class="all">All</div>
+                    <div class="mens-tag">Mens</div>
+                    <div class="womens-tag">Womens</div>
+                    <div class="jewellery-tag">Jewellery</div>
+                    <div class="electronics-tag">Electronics</div>
+                </div>
+            <div class="all-products">
+                <div class="products" id="hide-mens">
+                    <p class="products-title">Men's Clothing</p>
+                    <div class="men-products" id="mens-1">
+                        <!-- <div class="item-card">
+                            <img src="../image 1.png" alt="img">
+                            <div class="product-details">
+                                <div class="title">Title : Shirt</div>
+                                <div class="title price-tag"><p>Price : $100</p><p id="size-tag">S</p></div>
+                                <div class="title" id="colors-tag">Color : <p id="c1" style="background-color: blue;"></p></div>
+                                <div class="title" id="star-rating-tag"> Rating : 
+                                    <div id="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">Add To Cart</div>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="products" id="hide-womens">
+                    <p class="products-title">Women's Clothing</p>
+                    <div class="women-products" id="womens-2">
+                        <!-- womens products -->
+                    </div>
+                </div>
+                <div class="products" id="hide-jewellery">
+                    <p class="products-title">Jewellery</p>
+                    <div class="jewellery" id="jewellery-3">
+                        <!-- jewellery products -->
+                    </div>
+                </div>
+                <div class="products" id="hide-electronics">
+                    <p class="products-title">Electronics</p>
+                    <div class="electronics" id="electronics-4">
+                        <!-- electronics products -->
+                    </div>
+                </div>
+            </div>    
+            </div>
+        </div>
+        <div id="item-added">Item Successfully Added</div>
+    </main>
+
+    <script src="shop.js"></script>
+</body>
+</html>
