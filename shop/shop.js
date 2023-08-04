@@ -25,7 +25,7 @@ async function fetchData(){
         })
 
 	// products = allProducts;
-        console.log(allProducts);
+        // console.log(allProducts);
 
         localStorage.setItem("products",JSON.stringify(allProducts));
 
@@ -91,8 +91,8 @@ function renderData(products, divTag){
 // getting products data from local storage 
 
 let products = JSON.parse(localStorage.getItem('products'));
-
-// console.log(mensDiv);
+console.log('products ')
+console.log(products);
 let mensProducts = products.filter((product)=>{
         return product.category === "men's clothing";
 })
