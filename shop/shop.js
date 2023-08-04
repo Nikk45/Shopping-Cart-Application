@@ -112,8 +112,8 @@ console.log(mensProducts);
 
 renderData(mensProducts, mensDiv);
 renderData(womensProducts, womensDiv);
-renderData(jewelleryProducts, electronicsDiv);
-renderData(electronicsProducts, jewelleryDiv);
+renderData(jewelleryProducts, jewelleryDiv);
+renderData(electronicsProducts, electronicsDiv);
 
 
 
