@@ -9,7 +9,7 @@ let womensDiv = document.getElementById("womens-2");
 let electronicsDiv = document.getElementById('electronics-4');
 let jewelleryDiv = document.getElementById('jewellery-3');
 
-let products;
+// let products;
 
 // fetching data and storing in local storage
 async function fetchData(){
@@ -24,7 +24,7 @@ async function fetchData(){
             return product;
         })
 
-	products = allProducts;
+	// products = allProducts;
         console.log(allProducts);
 
         localStorage.setItem("products",JSON.stringify(allProducts));
@@ -90,7 +90,7 @@ function renderData(products, divTag){
 
 // getting products data from local storage 
 
-// let products = JSON.parse(localStorage.getItem('products'))
+let products = JSON.parse(localStorage.getItem('products'));
 
 // console.log(mensDiv);
 let mensProducts = products.filter((product)=>{
